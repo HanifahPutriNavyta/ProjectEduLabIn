@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class DashboardAsprakController extends Controller
 {
-    public function index()
+    public function DashboardAsprak()
     {
-        return view('asprak.DashboardAsprak'); // ✅ path view baru
+        return view('asprak.DashboardAsprak'); 
     }
 }
