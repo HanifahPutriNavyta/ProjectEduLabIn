@@ -1,0 +1,101 @@
+:root {
+    --primary: rgba(0, 40, 67, 1);
+    --secondary: rgba(237, 139, 0, 1);
+    --based-50: rgba(255, 255, 255, 1);
+    --neutral-600: rgba(93, 93, 93, 1);
+    --secondary-orange800: rgba(161, 56, 11, 1);
+}
+
+body {
+    background-color: var(--primary);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    width: 390px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 299px;
+    height: 89px;
+    margin-bottom: 40px;
+    object-fit: cover;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 300px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(117, 117, 117, 0.5);
+}
+
+.form-control {
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--based-50);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: var(--neutral-600);
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 4px rgba(117, 117, 117, 0.5);
+}
+
+.form-control::placeholder {
+    opacity: 0.5;
+    color: var(--neutral-600);
+}
+
+.login-btn {
+    display: block;
+    width: 120px;
+    height: 45px;
+    margin: 0 auto;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary-orange800);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login-link {
+    color: var(--secondary);
+    display: inline-block;
+    font-weight: 600;
+}
+
+.login-text-container {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+.text-secondary {
+    color: var(--secondary) !important;
+    display: inline;
+}
