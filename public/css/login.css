@@ -1,10 +1,18 @@
 :root {
-    --primary: #002843;
-    --secondary: #ED8B00;
-    --white: #FFFFFF;
-    --neutral600: #5D5D5D;
-    --gray2: #d1d1d1;
-    --secondary-orange800: #A1380B;
+    --primary: #0b192c;
+    --primary-800: #174375;
+    --white-blue:#f0f8ff;
+    --secondary: #ed8b00;
+    --white: #ffffff;
+    --secondary-orange800: #a1380b;
+    --black: #000000;
+    --neutral-50: #f6f6f6;
+    --neutral-100: #e7e7e7;
+    --neutral-200: #d1d1d1;
+    --neutral-300: #b0b0b0;
+    --neutral-600: #5d5d5d;
+    --neutral-800: #454545;
+    --based-100: #efefef;
 }
 
 /* GLOBAL */

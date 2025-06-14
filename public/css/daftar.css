@@ -1,13 +1,22 @@
 :root {
-    --primary: rgba(0, 40, 67, 1);
-    --secondary: rgba(237, 139, 0, 1);
-    --based-50: rgba(255, 255, 255, 1);
-    --neutral-600: rgba(93, 93, 93, 1);
-    --secondary-orange800: rgba(161, 56, 11, 1);
+    --primary: #0b192c;
+    --primary-800: #174375;
+    --white-blue:#f0f8ff;
+    --secondary: #ed8b00;
+    --white: #ffffff;
+    --secondary-orange800: #a1380b;
+    --black: #000000;
+    --neutral-50: #f6f6f6;
+    --neutral-100: #e7e7e7;
+    --neutral-200: #d1d1d1;
+    --neutral-300: #b0b0b0;
+    --neutral-600: #5d5d5d;
+    --neutral-800: #454545;
+    --based-100: #efefef;
 }
 
 body {
-    background-color: var(--primary);
+    background-color: var(--white);
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
@@ -16,12 +25,27 @@ body {
     margin: 0;
 }
 
-.login-container {
+.daftar-page {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.daftar-container {
     width: 390px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.card-style {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.1);
+    padding: 20px;
 }
 
 .logo {
@@ -49,12 +73,12 @@ body {
     padding: 10px 20px;
     border: none;
     border-radius: 15px;
-    background-color: var(--based-50);
+    background-color: var(--white);
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: var(--neutral-600);
     margin-bottom: 30px;
-    box-shadow: 0px 4px 4px rgba(117, 117, 117, 0.5);
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.5);
 }
 
 .form-control::placeholder {
@@ -62,7 +86,7 @@ body {
     color: var(--neutral-600);
 }
 
-.login-btn {
+.daftar-btn {
     display: block;
     width: 120px;
     height: 45px;
@@ -73,7 +97,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    color: #000000;
+    color: var(--black);
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

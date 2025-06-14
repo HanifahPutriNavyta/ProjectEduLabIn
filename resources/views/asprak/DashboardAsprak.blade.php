@@ -12,7 +12,7 @@
   </head>
 <body>
 
-@include('partials.navbar')
+  @include('partials.navbar')
 
   <main class="container py-4">
     <h1 class="judul-halaman">Dashboard</h1>
@@ -25,7 +25,7 @@
     </a>
 
     <div class="menu-item">
-      <img src="{{ asset('img/iconDataDiri.png') }}" alt="Data Diri Asprak" class="menu-icon">
+      <img src="{{ asset('img/iconIntensif.png') }}" alt="Data Diri Asprak" class="menu-icon">
       <span>Data Diri Asisten Praktikum</span>
     </div>
 
@@ -35,10 +35,9 @@
     </div>
 
     <div class="menu-item">
-      <img src="{{ asset('img/iconNilaiPraktikan.png') }}" alt="Nilai Praktikan" class="menu-icon" style="width: 35px;">
+      <img src="{{ asset('img/iconPenilaian.png') }}" alt="Nilai Praktikan" class="menu-icon" style="width: 35px;">
       <span>Nilai Praktikan</span>
     </div>
   </main>
-
 </body>
 </html>

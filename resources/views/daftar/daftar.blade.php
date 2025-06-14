@@ -11,8 +11,8 @@
   <link href="{{ asset('css/daftar.css') }}" rel="stylesheet">
 </head>
 
-<body>
-  <div class="login-container">
+<body class="daftar-page">
+  <div class="daftar-container">
     <!-- Logo -->
     <img class="logo" src="/img/LogoEduLabIn.png" alt="Edu LabIn Logo">
 
@@ -43,7 +43,7 @@
 
         <!-- Register Button -->
         <div class="text-center mb-4">
-          <button class="login-btn" type="submit">Daftar</button>
+          <button class="daftar-btn" type="submit">Daftar</button>
         </div>
 
         <!-- Link Login -->

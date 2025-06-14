@@ -1,0 +1,226 @@
+:root {
+    --primary: #0b192c;
+    --primary-800: #174375;
+    --primary-900: #183a62;
+    --white-blue: #f0f8ff;
+    --secondary: #ed8b00;
+    --secondary-500: #ff7e0a;
+    --secondary-orange800: #a1380b;
+    --white: #ffffff;
+    --black: #000000;
+    --neutral-50: #f6f6f6;
+    --neutral-100: #e7e7e7;
+    --neutral-200: #d1d1d1;
+    --neutral-300: #b0b0b0;
+    --neutral-600: #5d5d5d;
+    --neutral-800: #454545;
+    --based-100: #efefef;
+}
+
+/* GLOBAL */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--white);
+}
+
+.judul-halaman {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.dropdown-container {
+    margin-bottom: 20px;
+    position: relative
+}
+
+.divider {
+    border-top: 1px solid var(--neutral-200);
+    margin: 20px 0;
+}
+
+/* STYLE UNTUK SELECT BOX */
+.dropdown-container .form-select {
+    background-color: var(--neutral-100);
+    border: none;
+    padding: 10px 15px;
+    box-shadow: 2px 4px var(--black);
+    color: var(--neutral-300);
+    border-radius: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* STYLE UNTUK OPTION YANG DIPILIH */
+.dropdown-container .form-select option:checked {
+    color: var(--neutral-600);
+}
+
+/* STYLE UNTUK OPTION BIASA */
+.dropdown-container .form-select option {
+    color: var(--neutral-300);
+    background-color: var(--neutral-100);
+}
+
+.dropdown-arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 24px;
+    height: 24px;
+}
+
+/* BATAS GARIS */
+.line-div {
+    width: 100%;
+    position: relative;
+    border-top: 1px solid var(--neutral-200);
+    box-sizing: border-box;
+    height: 1px;
+    margin: 20px 0;
+}
+
+/* DASHBOARD */
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    font-size: 16px;
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px var(--neutral-200);
+    transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+    background-color: var(--based-100);
+}
+
+.menu-icon {
+    width: 30px;
+}
+
+/* BERITA ACARA & FILE NILAI */
+.pertemuan-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pertemuan-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--primary);
+    font-size: 14px;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.pertemuan-card .card-header {
+    background-color: var(--primary-800);
+    color: var(--white);
+    padding: 12px 20px;
+    padding-left: 14px;
+    border-radius: 0;
+    font-weight: 600;
+    border-bottom: 1px solid var(--primary)
+}
+
+.card-body {
+    padding-left: 20px;
+}
+
+.card-detail {
+    padding: 14px;
+}
+
+.pertemuan-card:hover {
+    background-color: var(--white-blue);
+    box-shadow: 0 6px 12px var(--neutral-200);
+    transform: translateY(-2px);
+}
+
+
+/* CUSTOM DROPDOWN */
+.form-select {
+    background-image: none !important;
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 20px;
+    background-color: var(--neutral-100);
+    box-shadow: 0 2px 4px var(--black);
+
+}
+
+/* INFORMASI NILAI */
+.matkul-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.matkul-item-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.matkul-item {
+    background-color: var(--white);
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px var(--neutral-200);
+    font-weight: 600;
+    color: var(--primary);
+    border: 1px solid var(--primary-900);
+}
+
+.matkul-item:hover {
+    background-color: var(--white-blue);
+    box-shadow: 0 6px 12px var(--neutral-200);
+    transform: translateY(-2px);
+}
+
+/* MODAL STYLES */
+.modal-title{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.btn-close {
+    --bs-btn-close-color: #000000;
+    filter: none !important;
+    opacity: 1 !important;
+}
+
+#downloadPdfBtn {
+    background-color: var(--secondary);
+    color: var(--black);
+    font-weight: 600;
+    font-size: 11px;
+    border-radius: 10px;
+    box-shadow: 2px solid var(--black);
+}
+
+#downloadPdfBtn:hover {
+    background-color: var(--secondary-500);
+}
+
+.pdf-icon-large {
+    font-size: 3rem;
+    color: var(--secondary);
+}
